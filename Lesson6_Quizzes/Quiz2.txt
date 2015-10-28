@@ -8,8 +8,24 @@ Questions:
 
 1.  Name two methods you can use to add a node to the DOM tree, and explain the difference between them.
 
-
-
+  a) The first method is the appendChild(): to use this method you specify the node to be attached (the child node)
+     and the node to attach it to (the parent node). A node attached with this mthod is always added as the last 
+     child element of the parent element. 
+     
+     parentNode.appendChild(childNode)
+     
+  b) The second method is the cloneNode(): you use this method of the document object to duplicate an existing node.
+     This method indicates whether the cloned node should include any child nodes of the existing node (true) or only
+     the specified parent node (false). 
+       
+     existingNode.cloneNode(true | false)
 
 
 2.  List the six main objects that make up the browser object model. 
+      
+      a) Window Object/ Global Object
+          1. History Object
+          2. Location Object
+          3. Navigation Object
+          4. Screen Object
+          5. Document Object
